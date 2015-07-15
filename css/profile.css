@@ -12,6 +12,9 @@ p {
     font-size: 20px;
     line-height: 2.15em;
     text-align: justify;
+    color: #bbc3c8;
+    font-family: 'Verdana', sans-serif;
+    font-size: 16px;
 }
 
 
@@ -78,7 +81,7 @@ hr.star-primary {
 
 hr.star-primary:after {
     color: #2c3e50;
-    background-color: #FAF4F6;
+    background-color: #FFFFFF;
 }
 
 .img-centered {
@@ -103,15 +106,19 @@ header img {
 
 header .intro-text .name {
       display: block;
-      font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-family: 'Helvetica Neue', sans-serif;
       font-size: 1em;
       font-weight: 100;
       padding: 20px;
+      color: #c9d0d4;
 }
 
 header .intro-text .quote {
     font-size: 1.25em;
     font-weight: 300;
+    font-family: 'Helvetica Neue', sans-serif;
+      font-size: 1em;
+    color: #c9d0d4;
 }
 
 @media(min-width:768px) {
@@ -382,8 +389,8 @@ footer .footer-below {
 .scroll-top {
     z-index: 1049;
     position: fixed;
-    right: 2%;
-    bottom: 2%;
+    right: 6%;
+    bottom: 6%;
     width: 50px;
     height: 50px;
 }
@@ -409,6 +416,10 @@ footer .footer-below {
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+
+.center{
+    text-align: center;
 }
 
 .portfolio-modal .modal-content h2 {
