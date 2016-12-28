@@ -6,17 +6,21 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="About Me">
-    <meta name="author" content="Misaki Moe">
-    <link rel="shortcut icon" href="images/star.png"> 
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
-    <title>Su Myint Myat Moe</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/profile.css" rel="stylesheet">
+    <meta name="description" content="">
+    <meta name="Su Myint Myat Moe" content="">
+
+    <title>Su Myint Myat Moe Personal Site</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,144 +31,153 @@
 
 </head>
 
-<body id="page-top" class="index">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <!-- Header -->
-    <header>
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="images/profile.png" alt="">
-                    <div class="intro-text">
-                        <span class="name">Su Myint Myat Moe</span>
-                     
-                       <span class="quote"></span> 
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    Moe
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#download">Skills</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="text-background brand-heading">Su Myint Myat Moe</h1>
+                        <p class="text-background intro-text">Designer, Illustrator, Thinker, Dreamer</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-     <!-- About Me Section -->
-    <section class="intro" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3>About Me </h3>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <p>Hi!! My name is <i>Su Myint Myat Moe</i></p>
-
-                    <p>I'm computer science graduate from <i>University of Computer Studies Yangon</i>. I enjoy crafting interfaces with thoughtful user experiences and currently working as UI/UX designer at <a href="http://www.escapepixel.com/" class="com_link"> Escapepixel </a></p>
-
-                
-
-                </div>
-
-
-                <div class="contact col-lg-8 col-lg-offset-2 text-center">
-                    <div class="contact1">You can find me on 
-                   <ul class="list-inline">
-                            <li>
-                                <a href="https://www.facebook.com/profile.php?id=100000272049838" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://plus.google.com/u/0/112673363087695174155/about" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/misaki__moe" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="http://misakimoe.tumblr.com/" class="btn-social btn-outline"><i class="fa fa-fw fa-tumblr"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/misakimoe" class="btn-social btn-outline"><i class="fa fa-fw fa-github-alt"></i></a>
-                            </li>
-                             <li>
-                                <a href="https://open.spotify.com/user/22rasnkcilgi2k66npheiglbq" class="btn-social btn-outline"><i class="fa fa-fw fa-spotify"></i></a>
-                            </li>
-                    
-                        </ul>
-                        </div>
-              </div>
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Me</h2>
+                <p>I'm computer science graduate from University of Computer Studies Yangon. I enjoy crafting interfaces with delightful user experiences and currently working as UI/UX designer at <a href="http://www.escapepixel.com/">Escapepixel.</a></p>
+                <p><p>
+                <p>I also do illustrations and occasionally available for freelance. </p>
             </div>
         </div>
     </section>
 
+    <!-- Skills Section -->
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>My Skills</h2>
+                           <div class="row">
 
-    <!-- Artworks sections-->
-        <section class="main">
-                <div class="row">
-                     <div class="col-lg-12 text-center">
-                          <h3>My Artworks</h3>
-                          <hr class="star-primary">
-                     </div>
-                 </div>
+            <div class="col-lg-4 col-sm-6 text-center">
+                <img class="img-circle img-responsive img-center" src="img/wireframe.png" alt="">
+                <h3>Prototyping
+                </h3>
+               
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center">
+                <img class="img-circle img-responsive img-center" src="img/illustration.png" alt="">
+                <h3>Illustration
+                   
+                </h3>
+                
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center">
+                <img class="img-circle img-responsive img-center" src="img/coding.png" alt="">
+                <h3>Front End
+                   
+                </h3>
+               
+            </div>
+        </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="ia-container">
-                    
-                    <figure>
-                        <img src="images/1.jpg" alt="image01" />
-                        <input type="radio" name="radio-set" checked="checked"/>
-                        
-                    <figure>
-                            <img src="images/2.jpg" alt="image02" />
-                            <input type="radio" name="radio-set" />
-                            
-                    <figure>
-                            <img src="images/3.jpg" alt="image03" />
-                            <input type="radio" name="radio-set" />
-                                
-                    <figure>
-                            <img src="images/4.jpg" alt="image04" />
-                            <input type="radio" name="radio-set" />
-                                    
-                                    <figure>
-                                        <img src="images/5.jpg" alt="image05" />
-                                        <input type="radio" name="radio-set" />
-                                        
-                                        <figure>
-                                            <img src="images/6.jpg" alt="image06" />
-                                            <input type="radio" name="radio-set" />
-                                
-                                            <figure>
-                                                <img src="images/7.jpg" alt="image07" />
-                                                <input type="radio" name="radio-set" />                                          
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact me</h2>
+                <p>Feel free to reach me out via mail or find me on any of social links below</p>
+                <p><a href="mailto:sumyintmyatmoe@gmail.com">sumyintmyatmoe@gmail.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://twitter.com/SuMyintMyatMoe" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/sumyintmyatmoe" class="btn btn-default btn-lg"><i class="fa fa-behance fa-fw"></i> <span class="network-name">Behance</span></a>
+                    </li>
+                     <li>
+                        <a href="https://www.instagram.com/misakimoe/" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
+                    </li>
+                        <li>
+                        <a href="https://github.com/misakimoe" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-                                                <figure>
-                                                    <img src="images/8.jpg" alt="image08" />
-                                                    <input id="ia-selector-last" type="radio" name="radio-set" />
-
-                </div>     
-                    <p class="center">view more on <a href="http://misaki-moe.deviantart.com/">Devient art</a></p>
-
-            </section>
-
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-
-    <div class="scroll-top page-scroll visible-xs visible-sm">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Su Myint Myat Moe</p>
+        </div>
+    </footer>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="vendor/jquery/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="js/freelancer.js"></script>
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
 
 </body>
 
